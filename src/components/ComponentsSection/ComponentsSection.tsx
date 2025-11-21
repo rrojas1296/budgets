@@ -19,7 +19,7 @@ const ComponentsSection = ({
   return (
     <div className="mt-6 lg:mt-10">
       <div className="lg:flex justify-between">
-        {components?.length && (
+        {components && components?.length > 0 ? (
           <>
             <h1 className="text-xl lg:text-2xl text-text-1 font-bold">
               {title}
@@ -29,7 +29,7 @@ const ComponentsSection = ({
               {dollar && (total * dollar).toFixed(2)}
             </p>
           </>
-        )}
+        ) : null}
       </div>
 
       <section className="mt-4 lg:mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
