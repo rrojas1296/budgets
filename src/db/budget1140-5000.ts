@@ -5,6 +5,7 @@ export const budget1440_5000: Budget = {
   buttonLabel: "1440P - 5000 Soles",
   title: "Procesador Amd Ryzen 5 7600",
   currency: "S/. ",
+  peripheralsTitle: "Perifericos",
   peripherals: [],
   components: [
     {
