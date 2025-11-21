@@ -1,0 +1,21 @@
+:root {
+  --primary-500: #3d4dfd;
+  --primary-400: #505ffd;
+  --bg-1: #f4f5f9;
+  --bg-2: #e0e3ec;
+  --border-card: #d1d7e3;
+  --text-1: #000000;
+  --text-2: #66687b;
+  --text-3: #ffffff;
+}
+
+.dark {
+  --primary-500: #1d2cd1;
+  --primary-400: #3441d6;
+  --bg-1: #0b0b0d;
+  --bg-2: #151519;
+  --border-card: #383b41;
+  --text-1: #ffffff;
+  --text-2: #b1b1be;
+  --text-3: #ffffff;
+}
