@@ -3,8 +3,9 @@ import Button from "./Button";
 
 interface Props {
   component: Component;
+  dollar: number | null;
 }
-const PCComponent = ({ component }: Props) => {
+const PCComponent = ({ component, dollar }: Props) => {
   const { title, photoUrl, urls, price, currency } = component;
 
   const openLinkHandler = (url: string) => window.open(url, "_blank");
@@ -22,7 +23,7 @@ const PCComponent = ({ component }: Props) => {
           </h2>
           <p className="text-text-2 text-sm font-medium mt-2">
             {currency}
-            {price}
+            {dollar && (price * dollar).toFixed(2)}
           </p>
         </div>
       </div>
