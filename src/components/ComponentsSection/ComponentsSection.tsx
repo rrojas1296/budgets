@@ -19,12 +19,16 @@ const ComponentsSection = ({
   return (
     <div className="mt-6 lg:mt-10">
       <div className="lg:flex justify-between">
-        <h1 className="text-xl lg:text-2xl text-text-1 font-bold">{title}</h1>
         {components?.length && (
-          <p className=" text-text-2 text-sm md:text-xl lg:text-2xl lg:text-text-1 font-bold">
-            {currency}
-            {dollar && (total * dollar).toFixed(2)}
-          </p>
+          <>
+            <h1 className="text-xl lg:text-2xl text-text-1 font-bold">
+              {title}
+            </h1>
+            <p className=" text-text-2 text-sm md:text-xl lg:text-2xl lg:text-text-1 font-bold">
+              {currency}
+              {dollar && (total * dollar).toFixed(2)}
+            </p>
+          </>
         )}
       </div>
 
