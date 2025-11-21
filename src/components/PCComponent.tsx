@@ -14,7 +14,7 @@ const PCComponent = ({ component }: Props) => {
         <img
           src={photoUrl}
           alt={title}
-          className="w-imageUrl h-imageUrl rounded-lg"
+          className="w-imageUrl object-cover h-imageUrl rounded-lg"
         />
         <div>
           <h2 className="text-text-1 text-base font-medium leading-5">
