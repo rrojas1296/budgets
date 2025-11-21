@@ -3,7 +3,7 @@ import type { ComponentProps } from "react";
 import { cn } from "../utils/cn";
 
 const buttonVariants = cva(
-  "px-3 rounded-lg justify-center h-9 outline-none transition-colors cursor-pointer flex items-center gap-3",
+  "px-3 rounded-lg justify-center text-sm h-9 outline-none transition-colors cursor-pointer flex items-center gap-3",
   {
     variants: {
       variant: {
