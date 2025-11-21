@@ -3,7 +3,7 @@ import type { Budget } from "./budgets";
 export const budget1440_7500: Budget = {
   id: "3c0e4f7e-9a55-46e4-8c8b-3fbbcb1a99c3",
   buttonLabel: "1440P - 7500 / 8200 Soles",
-  title: "AMD RYZEN 7 9700x - NVIDIA 5070 12GB  222",
+  title: "AMD RYZEN 7 9700x - NVIDIA 5070 12GB",
   currency: "S/. ",
   peripheralsTitle: "Perifericos",
   peripherals: [
