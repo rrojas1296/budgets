@@ -8,15 +8,20 @@ export const budget1440_7500: Budget = {
   peripheralsTitle: "Perifericos",
   peripherals: [
     {
-      title: "Monitor Gamer Ips LG 32gs75 32'' 180hz G-sync Freesync 1440p",
-      price: 431.0,
+      title:
+        "LG 34G600A-B 34-inch Ultragear WQHD (3440 x 1440) Curved Gaming Monitor",
+      price: 527.44,
       currency: "S/.",
       photoUrl:
-        "https://http2.mlstatic.com/D_NQ_NP_2X_871949-MLA95839575175_102025-F.webp",
+        "https://m.media-amazon.com/images/I/61fuO9Hr5OL._AC_SL1500_.jpg",
       urls: [
         {
           label: "Mercado Libre",
-          link: "https://www.mercadolibre.com.pe/monitor-gamer-ips-lg-32gs75-32-180hz-g-sync-freesync-1440p/p/MPE38828775#polycard_client=search-nordic&search_layout=grid&position=1&type=product&tracking_id=5078c468-a3c6-486c-9073-3d58b8245e10&wid=MPE692136908&sid=search&gid=1&pid=1",
+          link: "https://www.mercadolibre.com.pe/monitor-ultrawide-curvo-34-lg-34gp63a-fsync-160hz-qhd-hdr-1m/up/MPEU2457619437#polycard_client=search-nordic&search_layout=grid&position=2&type=product&tracking_id=02d6176f-6823-40ac-b9ef-d23e2d42f598&wid=MPE443634183&sid=search",
+        },
+        {
+          label: "Amazon",
+          link: "https://www.amazon.com/LG-34G600A-B-Ultragear-FreeSync-DisplayPort/dp/B0FDC85CGL/ref=sr_1_3?sr=8-3",
         },
       ],
     },
@@ -35,27 +40,35 @@ export const budget1440_7500: Budget = {
     },
     {
       title: "Audifono Cloud III Wireless Color Red Negro Hyperx HP",
-      price: 207.0,
+      price: 119.0,
       currency: "S/.",
       photoUrl:
-        "https://http2.mlstatic.com/D_NQ_NP_2X_855622-MLA95965795609_102025-F.webp",
+        "https://m.media-amazon.com/images/I/71mqaEv2KRL._AC_SL1500_.jpg",
       urls: [
         {
           label: "Mercado Libre",
           link: "https://www.mercadolibre.com.pe/audifono-cloud-iii-wireless-color-red-negro-hyperx-hp/p/MPE35343298#polycard_client=search-nordic&search_layout=grid&position=2&type=product&tracking_id=df5a3cf6-352b-4b0d-8dc6-dd996b4dc061&wid=MPE709933004&sid=search&gid=1&pid=1",
         },
+        {
+          label: "Amazon",
+          link: "https://www.amazon.com/HyperX-Cloud-III-Multi-Platform-Detachable/dp/B0F6NZWPTC/ref=sr_1_3?sr=8-3",
+        },
       ],
     },
     {
       title: "Mouse Inalambrico Razer Viper V3 Pro 35000dpi Negro",
-      price: 207.0,
+      price: 129.99,
       currency: "S/.",
       photoUrl:
-        "https://hca.pe/storage/media/large_QeKKM56AG8N0aWybfrUZdApVDz0f8BL4wi6iiPux.png",
+        "https://m.media-amazon.com/images/I/51Bp8U5Kg5L._AC_SL1500_.jpg",
       urls: [
         {
           label: "Mercado Libre",
           link: "https://www.mercadolibre.com.pe/mouse-inalambrico-razer-viper-v3-pro-35000dpi-negro/p/MPE46353877#polycard_client=search-nordic&search_layout=grid&position=4&type=product&tracking_id=ee60f994-7129-4f47-996b-3df579059c9d&wid=MPE824646776&sid=search",
+        },
+        {
+          label: "Amazon",
+          link: "https://www.amazon.com/Razer-Viper-Wireless-Esports-Gaming/dp/B0CW25XR5R/ref=sr_1_3?sr=8-3",
         },
       ],
     },
