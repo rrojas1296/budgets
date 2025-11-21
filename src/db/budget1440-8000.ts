@@ -161,7 +161,7 @@ export const budget1440_7500: Budget = {
     },
     {
       title: "Sistema De Enfriamiento Liquido Deepcool Mystique 360 Argb",
-      price: 169.0,
+      price: 199.0,
       currency: "S/.",
       photoUrl:
         "https://cdn.deepcool.com/public/ProductFile/DEEPCOOL/Cooling/CPULiquidCoolers/MYSTIQUE_360_ARGB/Gallery/800X800/01.jpg?fm=webp&q=60",
