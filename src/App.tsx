@@ -2,19 +2,21 @@ import { useTranslation } from "react-i18next";
 import { budgets } from "./db/budgets";
 import Button from "./components/Button";
 import { useEffect, useState } from "react";
-import PCComponent from "./components/PCComponent";
 import { useTheme } from "./hooks/useTheme";
 import MoonIcon from "./components/Icon/MoonIcon";
 import SunIcon from "./components/Icon/SunIcon";
 import axios from "axios";
 import { FASTFOREX_API_KEY } from "./config/environments";
+import ComponentsSection from "./components/ComponentsSection/ComponentsSection";
 
 function App() {
   const { t } = useTranslation();
   const { theme, setTheme } = useTheme();
-  const [budgetId, setBudgetId] = useState("2");
-  const budget = budgets.find((b) => b.id === budgetId);
+  const [budgetIndex, setBudgetIndex] = useState(1);
+  const budget = budgets.find((_, i) => i === budgetIndex);
   const [dollar, setDollar] = useState<null | number>(null);
+  const peripheralsTotal =
+    budget?.peripherals.reduce((sum, item) => sum + item.price, 0) || 0;
   const total =
     budget?.components.reduce((sum, item) => {
       return sum + item.price;
@@ -64,30 +66,27 @@ function App() {
                 key={i}
                 className="whitespace-nowrap"
                 variant={budget?.id === b.id ? "filled" : "ghost"}
-                onClick={() => setBudgetId(b.id)}
+                onClick={() => setBudgetIndex(i)}
               >
                 {b.buttonLabel}
               </Button>
             ))}
           </div>
         </div>
-        <div className="mt-6 lg:mt-10">
-          <div className="lg:flex justify-between">
-            <h1 className="text-xl lg:text-2xl text-text-1 font-medium">
-              {budget?.title}
-            </h1>
-            <p className="text-xl lg:text-2xl text-text-1 font-bold">
-              {budget?.currency}
-              {dollar && (total * dollar).toFixed(2)}
-            </p>
-          </div>
-
-          <section className="mt-4 lg:mt-8 grid gap-4 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
-            {budget?.components.map((c, i) => {
-              return <PCComponent key={i} component={c} dollar={dollar} />;
-            })}
-          </section>
-        </div>
+        <ComponentsSection
+          components={budget?.components}
+          title={budget?.title}
+          currency={budget?.currency}
+          total={total}
+          dollar={dollar}
+        />
+        <ComponentsSection
+          components={budget?.peripherals}
+          title={budget?.peripheralsTitle}
+          currency={budget?.currency}
+          total={peripheralsTotal}
+          dollar={dollar}
+        />
       </div>
     </div>
   );
