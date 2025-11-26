@@ -92,19 +92,19 @@ export const budget1440_7500: Budget = {
       ],
     },
     {
-      title: "Nvidia RTX 5070 12GB Gigabyte OC",
-      price: 769.0,
+      title: "Tarjeta De Video Gigabyte Rx 9070xt 16gb Gaming Oc",
+      price: 739.0,
       currency: "S/.",
       photoUrl:
-        "https://www.impacto.com.pe/storage/products/md/17492452861420.webp",
+        "https://m.media-amazon.com/images/I/810BADDS2RL._AC_SL1500_.jpg",
       urls: [
         {
           label: "Tienda Impacto",
-          link: "https://www.impacto.com.pe/producto/tarjeta-de-video-gigabyte-geforce-rtx-5070-12gb-gddr7-windforce-oc-sff-gv-n5070wf3oc-12gd-g10-nvidia-192-bits-3-ventiladores",
+          link: "https://www.impacto.com.pe/producto/tarjeta-de-video-gigabyte-rx-9070xt-16gb-gaming-oc-gv-rx9070xtgaming-oc16gb-radeon-256bits-3-ventiladores",
         },
         {
-          label: "Mercado Libre",
-          link: "https://www.mercadolibre.com.pe/tarjeta-de-video-nvidia-gigabyte-geforce-rtx-5070-gv-n5070wf30c-12gd-windforce-oc-sff-12gb/p/MPE49431202#polycard_client=search-nordic&search_layout=grid&position=6&type=product&tracking_id=2fc19b22-7ece-462d-8d68-f3769d5e9793&wid=MPE727288210&sid=search",
+          label: "Amazon",
+          link: "https://www.amazon.com/Gigabyte-Radeon-9070-Gaming-Graphics/dp/B0DT78YM6P/ref=sr_1_8?sr=8-8",
         },
       ],
     },
